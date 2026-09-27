@@ -1,98 +1,95 @@
-🏠 California Housing Price Prediction using Linear Regression
+# California Housing Price Prediction using Linear Regression
 
-📌 Project Overview
+## 📌 Project Overview
 
-This project uses Machine Learning to predict house prices using the California Housing dataset.
+This project demonstrates a complete Machine Learning regression pipeline using the California Housing dataset.
 
-The Linear Regression algorithm is used to learn the relationship between different housing features and the median house value.
+The goal is to build a **Linear Regression model** that predicts the median house value based on different housing and location-related features.
 
-🎯 Objective
+---
 
-• Understand the basics of Regression
-• Explore the California Housing dataset
-• Build a Linear Regression model
-• Make house price predictions
-• Evaluate the model using MAE, MSE and R²
+## 🎯 Objective
 
-📊 Dataset
+- Understand the basics of Regression
+- Explore the California Housing dataset
+- Train a Linear Regression model
+- Make house value predictions
+- Evaluate the model using MAE, MSE, and R²
+
+---
+
+## 📊 Dataset
 
 The California Housing dataset contains information about housing districts in California.
 
-🔹 Features
+### Features
 
-• 💰 MedInc – Median income
-• 🏚️ HouseAge – Median house age
-• 🚪 AveRooms – Average number of rooms
-• 🛏️ AveBedrms – Average number of bedrooms
-• 👥 Population – Population of the district
-• 👨‍👩‍👧 AveOccup – Average occupancy
-• 📍 Latitude – Geographic latitude
-• 🌍 Longitude – Geographic longitude
+- **MedInc** – Median income
+- **HouseAge** – Median house age
+- **AveRooms** – Average number of rooms
+- **AveBedrms** – Average number of bedrooms
+- **Population** – Population of the district
+- **AveOccup** – Average occupancy
+- **Latitude** – Geographic latitude
+- **Longitude** – Geographic longitude
 
-🎯 Target
+### Target
 
-MedHouseVal – Median house value.
+**MedHouseVal** – Median house value.
 
-The target value is represented in units of $100,000.
+The target is represented in units of **$100,000**.
 
-🔄 Machine Learning Process
+For example:
 
-1️⃣ Load the dataset
-2️⃣ Separate features and target
-3️⃣ Split the dataset into training and testing data
-4️⃣ Create the Linear Regression model
-5️⃣ Train the model
-6️⃣ Make predictions
-7️⃣ Evaluate the model
-8️⃣ Predict the value of a new house
+`3.41` ≈ `$341,000`
 
-📚 Train-Test Split
+---
 
-🔹 80% of the dataset was used for training.
-🔹 20% of the dataset was used for testing.
+## 🔄 Machine Learning Pipeline
 
-📈 Model Evaluation
+The project follows these steps:
 
-📌 MAE: 0.5332
+1. Load the dataset
+2. Separate features and target
+3. Split the data into training and testing sets
+4. Create a Linear Regression model
+5. Train the model
+6. Make predictions
+7. Evaluate the model
+8. Predict the value of a new house
 
-The model's average prediction error is approximately $53,320.
+---
 
-📌 MSE: 0.5559
+## 🧠 Model Used
 
-MSE measures the squared difference between actual and predicted values.
+### Linear Regression
 
-📌 R²: 0.5758
+Linear Regression is a supervised learning algorithm used to predict a continuous numerical value.
 
-The model explains approximately 57.6% of the variation in house values.
+In this project:
 
-🏡 Example Prediction
+**Input:** Housing and location features
 
-Predicted House Value: 3.4108
+**Output:** Predicted median house value
 
-💵 Approximate House Value: $341,080
+---
 
-🛠️ Technologies Used
+## 📈 Train-Test Split
 
-🐍 Python
-🐼 Pandas
-🤖 Scikit-learn
-📊 Matplotlib
-💻 VS Code
+The dataset was divided into:
 
-📖 What I Learned
+- **80% Training Data**
+- **20% Testing Data**
 
-• Machine Learning basics
-• Regression
-• Features and target
-• Training and testing data
-• Linear Regression
-• Making predictions
-• Model evaluation
-• MAE, MSE and R²
-• Interpreting model results
+The training data is used to teach the model, while the testing data is used to evaluate how well the model performs on unseen data.
 
-✅ Conclusion
+---
 
-A Linear Regression model was successfully built using the California Housing dataset.
+## 📏 Model Evaluation
 
-The model was evaluated using MAE, MSE and R² and was also used to predict the value of a new house.
+The model was evaluated using three metrics.
+
+### MAE – Mean Absolute Error
+
+```text
+MAE = 0.5332
